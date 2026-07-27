@@ -1,0 +1,454 @@
+/* Chambers: bone paper, single serif, oxblood accent, narrow column.
+   Visual source of truth: mainline-systems-chambers-reference.html.
+   Primary face is Fable (licensed). Drop the woff2 files into /fonts and
+   uncomment the @font-face block below; Spectral carries the site until then. */
+
+/*
+@font-face {
+  font-family: 'Fable';
+  src: url('/fonts/fable-regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Fable';
+  src: url('/fonts/fable-italic.woff2') format('woff2');
+  font-weight: 400; font-style: italic; font-display: swap;
+}
+@font-face {
+  font-family: 'Fable';
+  src: url('/fonts/fable-medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Fable';
+  src: url('/fonts/fable-semibold.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+*/
+
+:root {
+  --bone:      #f4f1ea;
+  --paper:     #faf8f2;
+  --ink:       #1c1a16;
+  --ink-soft:  #534e44;
+  --ink-faint: #8a8475;
+  --rule:      #d8d2c4;
+  --oxblood:   #6b2330;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: 'Fable', 'Spectral', Georgia, serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap { width: 100%; margin: 0 auto; padding: 0 28px; }
+
+a { color: var(--oxblood); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.rule { border: 0; border-top: 1px solid var(--rule); margin: 0; }
+
+/* --- Top --- */
+
+header.top { padding: 2.5rem 0 0; }
+
+.top .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.brand { font-size: 1.15rem; letter-spacing: .01em; }
+.brand b { font-weight: 600; }
+.brand a { color: var(--ink); }
+.brand a:hover { text-decoration: none; color: var(--oxblood); }
+
+.top-contact { font-size: .85rem; color: var(--ink-soft); }
+
+/* --- Hero --- */
+
+.hero { padding: 4.5rem 0 3rem; }
+
+.eyebrow {
+  font-size: .72rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin: 0 0 1.6rem;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5.5vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -.012em;
+  margin: 0 0 1.4rem;
+}
+
+.lede {
+  font-size: 1.22rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  font-style: italic;
+  max-width: 36em;
+  margin: 0 0 2.2rem;
+}
+
+.cta-row {
+  display: flex;
+  gap: 1.6rem;
+  align-items: baseline;
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+.cta-primary {
+  border-bottom: 1.5px solid var(--oxblood);
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+/* --- Sections --- */
+
+section { padding: 3.4rem 0; }
+
+.kicker {
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin: 0 0 1.1rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.5vw, 2.1rem);
+  line-height: 1.15;
+  margin: 0 0 1rem;
+  letter-spacing: -.01em;
+}
+
+/* --- Offer columns --- */
+
+.wrap-wide { width: 100%; margin: 0 auto; padding: 0 28px; }
+
+.offers-section { padding: 3rem 0 3.4rem; }
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col {
+  padding: 1.8rem 1.6rem;
+  border: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.col + .col { border-left: 0; }
+
+.col.flagship { background: var(--paper); border-color: var(--ink-soft); }
+.col.flagship + .col { border-left: 1px solid var(--rule); }
+
+.col h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin: 0 0 .9rem;
+}
+
+.col h1 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0;
+  margin: 0 0 .9rem;
+}
+
+.col p {
+  font-size: .95rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+}
+
+.col .collede { font-style: italic; }
+
+.col .price {
+  font-size: .92rem;
+  color: var(--ink);
+  border-top: 1px solid var(--rule);
+  padding-top: .8rem;
+  margin: auto 0 .4rem;
+}
+
+.col .price b { font-weight: 600; }
+
+.col .sub { font-size: .85rem; color: var(--ink-faint); margin: 0; }
+
+.contact-line {
+  text-align: center;
+  font-size: 1.02rem;
+  margin: 2.2rem 0 0;
+}
+
+section[id], .col[id] { scroll-margin-top: 1.5rem; }
+
+/* --- Shared spine --- */
+
+/* --- The tells --- */
+
+.tells .big, .hero .big, .due-diligence .big {
+  font-style: italic;
+  font-size: 1.18rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 34em;
+  margin: 0 0 1.8rem;
+}
+
+ul.neg { list-style: none; margin: 0; padding: 0; }
+
+ul.neg li {
+  padding: .5rem 0 .5rem 1.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.02rem;
+  color: var(--ink-soft);
+}
+
+ul.neg li:last-child { border-bottom: 0; }
+
+ul.neg li::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  color: var(--ink-faint);
+}
+
+/* --- Proof --- */
+
+.proof p, .vendor-blind p, .ai p, .who-pays p, .access p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.proof p:last-child, .vendor-blind p:last-child, .ai p:last-child,
+.who-pays p:last-child, .access p:last-child { margin-bottom: 0; }
+.proof .lead-name { font-weight: 600; }
+
+/* --- Footer --- */
+
+footer { padding: 2.6rem 0 4rem; font-size: .85rem; color: var(--ink-faint); }
+footer a { color: var(--ink-soft); }
+footer .also { margin-bottom: .9rem; }
+footer .fr { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: .6rem; }
+
+/* --- Subpages --- */
+
+.subpage-hero { padding: 3.4rem 0 2.6rem; }
+
+.subpage-hero .back-link {
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.8rem;
+}
+
+.subpage-hero .back-link:hover { color: var(--oxblood); text-decoration: none; }
+
+.subpage-title {
+  font-weight: 400;
+  font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+  line-height: 1.12;
+  letter-spacing: -.01em;
+  margin: 0;
+}
+
+.subpage-content { padding: 2.6rem 0 3.4rem; }
+
+.subpage-content h2 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  letter-spacing: 0;
+  margin: 2.6rem 0 .9rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--rule);
+}
+
+.subpage-content h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.subpage-content p {
+  font-size: .98rem;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 0 0 1rem;
+}
+
+.subpage-content strong { color: var(--ink); font-weight: 600; }
+
+.subpage-content ul { list-style: none; margin: 0 0 1rem; padding: 0; }
+
+.subpage-content ul li {
+  padding: .5rem 0 .5rem 1.5rem;
+  position: relative;
+  border-bottom: 1px solid var(--rule);
+  font-size: .98rem;
+  color: var(--ink-soft);
+}
+
+.subpage-content ul li:last-child { border-bottom: 0; }
+
+.subpage-content ul li::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  color: var(--ink-faint);
+}
+
+.subpage-content .finding-example {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 1.4rem 1.6rem;
+  margin: 1.4rem 0;
+}
+
+.subpage-content .finding-example p:last-child { margin-bottom: 0; }
+
+.subpage-content .price-block {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 1.8rem 0;
+}
+
+.subpage-content .price-block small {
+  font-size: .78rem;
+  font-weight: 400;
+  color: var(--ink-faint);
+}
+
+.subpage-content .contact-email { font-size: 1.05rem; }
+.subpage-content .contact-email a { font-weight: 500; border-bottom: 1.5px solid var(--oxblood); padding-bottom: 2px; }
+.subpage-content .contact-email a:hover { text-decoration: none; color: var(--ink); }
+
+.subpage-content .contact-desc {
+  font-size: .85rem;
+  color: var(--ink-faint);
+  margin-top: .5rem;
+}
+
+/* --- Field guide --- */
+
+.subpage-content .subtitle {
+  font-style: italic;
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.subpage-content h2.group-title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  margin: 3.6rem 0 .6rem;
+  padding-top: 3rem;
+}
+
+.subpage-content h3 {
+  font-weight: 500;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 2.2rem 0 .9rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid var(--rule);
+}
+
+.subpage-content .action {
+  border-left: 2px solid var(--oxblood);
+  padding-left: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.subpage-content .action strong { color: var(--oxblood); }
+
+.toc { margin: 2.2rem 0 0; }
+
+.toc-group { margin: 0 0 .9rem; }
+
+.toc-group .toc-label {
+  font-size: .68rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 500;
+  margin: 0 0 .4rem;
+}
+
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.toc ol li {
+  font-size: .88rem;
+  line-height: 1.4;
+  padding: .2rem 0;
+  break-inside: avoid;
+}
+
+.toc ol li a { color: var(--ink-soft); }
+.toc ol li a:hover { color: var(--oxblood); }
+
+.subpage-content .references p {
+  font-size: .85rem;
+  padding-left: 2rem;
+  text-indent: -2rem;
+}
+
+.subpage-content .closing {
+  font-style: italic;
+  margin-top: 2.6rem;
+  padding-top: 2.2rem;
+  border-top: 1px solid var(--rule);
+}
+
+@media (max-width: 480px) {
+  .toc ol { columns: 1; }
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 900px) {
+  .cols { grid-template-columns: 1fr; }
+  .col + .col { border-left: 1px solid var(--rule); border-top: 0; }
+  .col.flagship { border-color: var(--ink-soft); }
+}
+

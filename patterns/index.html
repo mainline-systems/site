@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patterns — Mainline Systems</title>
+  <meta name="description" content="Patterns that keep engineering consultancy engagements running long after the work justifies them. A field guide for buyers, with the research.">
+  <link rel="canonical" href="https://mainline.systems/patterns/">
+  <meta property="og:title" content="Patterns">
+  <meta property="og:description" content="Patterns that keep engineering consultancy engagements running long after the work justifies them. A field guide for buyers, with the research.">
+  <meta property="og:url" content="https://mainline.systems/patterns/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Mainline Systems">
+  <meta property="og:image" content="https://mainline.systems/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Patterns">
+  <meta name="twitter:description" content="Patterns that keep engineering consultancy engagements running long after the work justifies them. A field guide for buyers, with the research.">
+  <meta name="twitter:image" content="https://mainline.systems/og-image.png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Patterns",
+      "description": "A field guide for buyers of engineering consultancies, with the research behind it.",
+      "author": {"@id": "https://mainline.systems/#nat-young"},
+      "publisher": {"@id": "https://mainline.systems/#organization"},
+      "url": "https://mainline.systems/patterns/"
+  }
+  </script>
+  <!-- Self-hosted Umami analytics -->
+  <script defer src="https://analytics.mainline.dev/script.js" data-website-id="4229bb85-a3f4-42d6-9132-33e29b44d3c6"></script>
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <div class="brand"><a href="/">Mainline <b>Systems</b></a></div>
+    <div class="top-contact"><a href="mailto:hello@mainline.systems" data-umami-event="contact-click">hello@mainline.systems</a></div>
+  </div></header>
+
+  <main>
+  <section class="subpage-hero"><div class="wrap">
+      <h1 class="subpage-title">Patterns</h1>
+  </div></section>
+
+  <hr class="rule">
+  <section class="subpage-content"><div class="wrap">
+
+      <p class="subtitle">A field guide for buyers of engineering consultancies, with the research behind it.</p>
+
+      <p>
+        Patterns that keep engagements running long after the work has stopped
+        justifying them. None of these are rare. Most are invisible to the buyer
+        until it is too late, because the consultancy controls the information,
+        the vocabulary, and the narrative.
+      </p>
+      <p>
+        Where a claim can be grounded in a study, the study is named, so you
+        can check it yourself rather than taking our word for it. That is the
+        whole philosophy of an audit: evidence over assertion.
+      </p>
+      <p>
+        If you recognise three or more of these, the engagement is not going
+        well. You are being managed, not served.
+      </p>
+
+      <nav class="toc">
+        <div class="toc-group">
+          <ol>
+            <li><a href="#account-manager">The account manager shield</a></li>
+            <li><a href="#goalposts">Moving the goalposts</a></li>
+            <li><a href="#vocabulary">Vocabulary inflation</a></li>
+            <li><a href="#expertise">Claiming expertise that does not exist</a></li>
+            <li><a href="#ai-exception">The "AI exception"</a></li>
+            <li><a href="#failure-as-learning">Reframing failure as learning</a></li>
+            <li><a href="#complexity">The complexity excuse</a></li>
+            <li><a href="#staffing">The staffing shell game</a></li>
+            <li><a href="#discovery">The never-ending discovery</a></li>
+            <li><a href="#dependency">Deliberate dependency creation</a></li>
+            <li><a href="#dashboard">The dashboard of distraction</a></li>
+            <li><a href="#transformation">The transformation that never transforms</a></li>
+            <li><a href="#demo">The demo that is not production</a></li>
+            <li><a href="#metrics">Metric gaming</a></li>
+            <li><a href="#best-practice">The "best practice" shield</a></li>
+          </ol>
+        </div>
+        <div class="toc-group">
+          <p class="toc-label">Technical</p>
+          <ol>
+            <li><a href="#microservices-pitch">The microservices sales pitch</a></li>
+            <li><a href="#microservices-prerequisites">Microservices without the prerequisites</a></li>
+          </ol>
+        </div>
+        <div class="toc-group">
+          <p class="toc-label">AI</p>
+          <ol>
+            <li><a href="#ai-discipline">AI as a substitute for engineering discipline</a></li>
+            <li><a href="#ai-deck">The AI strategy that is just a deck</a></li>
+            <li><a href="#ai-demo">The AI demo problem, amplified</a></li>
+            <li><a href="#agentic">Selling "agentic AI" without the foundations</a></li>
+            <li><a href="#prompt-engineer">The prompt engineer as expert</a></li>
+          </ol>
+        </div>
+        <div class="toc-group">
+          <p class="toc-label">Crosses the line</p>
+          <ol>
+            <li><a href="#budget-burning">Budget burning</a></li>
+            <li><a href="#writing-rules">Writing the rules, then winning the game</a></li>
+            <li><a href="#revolving-door">The revolving door</a></li>
+            <li><a href="#ghost-resources">Ghost resources and rate inflation</a></li>
+            <li><a href="#independent-review">The "independent" review that is not independent</a></li>
+            <li><a href="#manufactured-urgency">Manufactured urgency</a></li>
+            <li><a href="#vendor-incentives">Undisclosed vendor incentives</a></li>
+          </ol>
+        </div>
+        <div class="toc-group">
+          <ol>
+            <li><a href="#healthy">What a healthy consultancy looks like</a></li>
+          </ol>
+        </div>
+      </nav>
+
+      <h2 id="numbers">A note on the numbers</h2>
+
+      <p>Two findings frame everything below.</p>
+      <p>
+        First, most large software projects underdeliver, and this is measured.
+        A University of Oxford study reviewing more than 5,400 IT projects each
+        costing over fifteen million dollars found that on average large IT
+        projects run 45 percent over budget and 7 percent over time while
+        delivering 56 percent less value than predicted (Bloch, Blumberg and
+        Laartz, 2012).<sup>1</sup> The Standish Group's CHAOS research, tracking
+        project outcomes since 1994, has consistently found that only around a
+        third of projects fully succeed, and that large projects succeed far
+        less often than small ones.
+      </p>
+      <p>
+        Second, the practices that predict success are measurable and well
+        established. A decade of DORA (DevOps Research and Assessment) research,
+        the largest ongoing study of software delivery, identifies four key
+        metrics that distinguish high performers: deployment frequency, lead
+        time for changes, change failure rate, and failed deployment recovery
+        time. (A fifth, reliability, was added in a later iteration.) The 2024
+        State of DevOps Report, drawing on over 39,000 respondents, found only
+        18.7 percent of teams qualify as elite, and that the industry is getting
+        worse. The high-performing tier shrank from 31 percent to 22 percent
+        year over year. The low tier grew from 17 percent to 25 percent. Nearly
+        a quarter of respondents deploy less than once a month.
+      </p>
+      <p>
+        The gap between those two facts — projects fail at scale, yet the
+        practices that prevent failure are known and rare — is the space
+        consultancies operate in. The patterns below are how that space gets
+        exploited.
+      </p>
+
+      <h3 id="account-manager">The account manager shield</h3>
+
+      <p>
+        The work is poor but the relationship is excellent. The account manager
+        is warm, responsive, available, and deeply concerned about your
+        satisfaction. Meanwhile the delivery team is underperforming, and you
+        never speak to them directly. The account manager exists to keep you
+        comfortable while the meter runs. Their job is retention, not delivery.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> If your primary contact is not the
+        person writing the code or leading the technical work, ask what the
+        account manager actually produces. If the answer is meetings and status
+        reports, you are paying for a buffer between you and the truth.
+      </p>
+
+      <h3 id="goalposts">Moving the goalposts</h3>
+
+      <p>
+        The original scope was clear. Six months in, what was promised has
+        quietly shifted. This rarely happens in a single dramatic moment. It
+        happens across dozens of small conversations, each reasonable in
+        isolation: "we discovered some complexity," "the requirements evolved,"
+        "we re-prioritised based on learnings." By the time you compare the
+        current state to the original proposal, the two bear no resemblance to
+        each other.
+      </p>
+      <p>
+        This is a documented failure mode. Scope and requirements instability is
+        one of the most consistently cited contributors to project failure in
+        the Standish CHAOS research, alongside lack of user involvement.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Keep the original proposal and SOW
+        somewhere you can find them. Every quarter, compare what was promised to
+        what is live and working in production. Anything described as "in
+        progress" or "almost done" does not count. The gap is the finding.
+      </p>
+
+      <h3 id="vocabulary">Vocabulary inflation</h3>
+
+      <p>
+        The consultancy uses precise-sounding language that makes simple things
+        sound complex and complex things sound handled. "We're implementing a
+        microservices architecture with event-driven choreography" might mean
+        "we split the app into pieces and now nothing works reliably." The
+        vocabulary serves two purposes: it makes the consultancy sound expert,
+        and it makes the client feel unqualified to ask questions.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> When a consultancy uses a technical
+        term, ask them to explain it in plain language and show you where it is.
+        "Show me a deployment that happened this week" is better than any
+        definition. If the explanation is more jargon, or they cannot show you
+        the thing they named, the term is decorative.
+      </p>
+
+      <h3 id="expertise">Claiming expertise that does not exist</h3>
+
+      <p>
+        The proposal said the team had deep experience in your domain or stack.
+        The people who show up have little or none. The experienced architect
+        who appeared at the pitch is not on the project, or is "available for
+        consultation" but never actually present. The pitch team and the
+        delivery team are different people, and the handoff happens after the
+        contract is signed.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask for the CVs and experience of the
+        people who will actually be on the project: the delivery team, not the
+        pitch team. Compare to the expertise claims in the proposal. Revisit
+        when team members rotate, which they will.
+      </p>
+
+      <h3 id="ai-exception">The "AI exception"</h3>
+
+      <p>
+        "AI changes everything. Traditional testing approaches don't apply. We
+        need a different kind of quality assurance for AI-generated code. Our
+        team has developed a proprietary methodology."
+      </p>
+      <p>
+        This is the current favourite. AI is new enough that buyers cannot
+        easily challenge the claim, and it provides cover for abandoning the
+        engineering discipline that was already absent. The truth: AI-generated
+        code has to integrate, be tested, deploy, and survive production,
+        exactly like code written by a person. A consultancy claiming AI
+        requires different standards is using novelty as cover for lowering the
+        bar.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask what, specifically, is different
+        about their AI methodology. Ask to see it. Ask how many deployments to
+        production happened this month. If AI is accelerating delivery, the
+        deployment log should show it. If it does not, the acceleration is
+        theoretical.
+      </p>
+
+      <h3 id="failure-as-learning">Reframing failure as learning</h3>
+
+      <p>
+        The sprint failed. Features were not delivered. But the retrospective
+        says "we learned a lot this sprint" and "the team is building velocity."
+        Learning matters, but it cannot be the only deliverable, sprint after
+        sprint, in an engagement you pay for by the week.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Count what shipped to production, not
+        what was discussed. If the same "learnings" appear in multiple
+        retrospectives, nothing was learned; the same problems are repeating and
+        being narratively repackaged. Deployment frequency cuts through: a team
+        that is "learning" but not deploying is a team that is failing,
+        regardless of how the retro reads.
+      </p>
+
+      <h3 id="complexity">The complexity excuse</h3>
+
+      <p>
+        Everything takes longer because the consultancy "discovered complexity."
+        Sometimes this is true. Often it is cover for poor estimation,
+        inadequate discovery, or a team not skilled enough for the work. The
+        consultancy framed an aggressive timeline to win the deal and is now
+        managing the gap by attributing the shortfall to forces beyond their
+        control.
+      </p>
+      <p>
+        A team that estimates from empirical lead-time data — measuring how long
+        similar work actually took in the past — catches this before the
+        estimate leaves the room. A team that estimates in story points or gut
+        feel does not. The estimation model determines whether the excuse has
+        anywhere to hide.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask whether the complexity was knowable
+        when the proposal was written. If they did a discovery phase and still
+        missed it, the discovery was inadequate. If they did not, they estimated
+        blind. Ask what specific complexity was found, when, and what the
+        revised estimate is with a rationale. Vague complexity means nothing.
+        Specific complexity with a documented impact is worth discussing.
+      </p>
+
+      <h3 id="staffing">The staffing shell game</h3>
+
+      <p>
+        Senior people rotate off. Junior people rotate in. The consultancy
+        calls it "team evolution." What is happening: the expensive senior staff
+        won the deal and established the relationship, and now that the contract
+        is signed they are moved to the next sales engagement while delivery is
+        handed to less experienced, less expensive staff, billed at the same
+        rate.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Track who is actually on the team,
+        month by month, against what was proposed. If the team that pitched is
+        not the team that delivers, and the replacements are more junior, the
+        margin is being optimised at your expense.
+      </p>
+
+      <h3 id="discovery">The never-ending discovery</h3>
+
+      <p>
+        The engagement starts with a discovery phase — legitimate and often
+        valuable. The trick is when discovery never ends. Phase one recommends
+        phase two. Phase two recommends a pilot. The pilot recommends a proof of
+        concept. At each stage the consultancy produces a document that
+        justifies the next document. Working software is always one phase away.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask when working software will reach
+        production, where real users can use it. If the answer is always "after
+        the next phase," the engagement is structured to produce documents, not
+        software.
+      </p>
+
+      <h3 id="dependency">Deliberate dependency creation</h3>
+
+      <p>
+        The consultancy builds the system so only they can maintain it. Key
+        decisions are undocumented. Knowledge lives in the heads of the
+        consulting team and leaves when they do. This is what happens when an
+        engagement is structured around delivery with no plan for handoff, and
+        the consultancy is incentivised to stay rather than make itself
+        unnecessary.
+      </p>
+      <p>
+        The research is clear. Analysis of consultant dependency identifies it
+        as a structural outcome of contract design: most consulting contracts
+        are time-and-materials or phased deliverables, and neither model rewards
+        finishing faster or transferring capability. Organisations that do not
+        explicitly plan for the capability to live in-house end up in a
+        dependency state where the work was done but the knowledge did not
+        transfer.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask: could our internal team operate
+        this system tomorrow if the consultancy left? If the answer is no, ask
+        what the plan is to change that, and when. If there is no plan, the
+        dependency is the business model.
+      </p>
+
+      <h3 id="dashboard">The dashboard of distraction</h3>
+
+      <p>
+        The consultancy produces impressive dashboards. Velocity trends upward.
+        Story points completed per sprint increase. Burndown charts look
+        healthy. None of these measure whether working software is reaching
+        production. Velocity measures effort. Story points measure estimates. A
+        burndown chart can reach zero in a sprint where nothing ships.
+      </p>
+      <p>
+        The DORA metrics exist specifically because these proxy measures fail.
+        Deployment frequency, lead time, change failure rate, and recovery time
+        were validated because they measure outcomes that cannot be gamed by
+        working harder at the wrong thing. Velocity and story points appear in
+        none of the DORA key metrics, because they measure the inside of the
+        process rather than its result.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask the one question the dashboard does
+        not answer: how many times did we deploy to production this month? If
+        the dashboard tracks velocity and burndown but not deployment frequency
+        or lead time, it measures the theatre.
+      </p>
+
+      <h3 id="transformation">The transformation that never transforms</h3>
+
+      <p>
+        The consultancy was engaged to run an "agile transformation" or "digital
+        transformation." Months in, there is a new org chart, new role titles,
+        new ceremonies, squads and tribes, perhaps a Transformation Lead and a
+        Head of Ways of Working. Nothing about how the software is built or
+        shipped has changed. The same code sits in the same long-lived branches.
+        Deployments happen at the same frequency as before.
+      </p>
+      <p>
+        This gap is measurable. Industry analysis finds that while a large
+        majority of companies claim successful agile adoption, only about half
+        actually operate in an agile way. The CHAOS research is clear that
+        genuine agile practice roughly triples success rates over waterfall. The
+        cosmetic version forfeits a real, measured benefit.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Compare how the team was described
+        before the transformation with how software reaches production now. If
+        the vocabulary changed but deployment frequency, integration cadence,
+        and test automation did not, the transformation is cosmetic. Ask to see
+        the deployment log from before and after. That comparison is the
+        finding.
+      </p>
+
+      <h3 id="demo">The demo that is not production</h3>
+
+      <p>
+        The demo looks excellent: features work, the design is polished,
+        stakeholders are impressed. What is not mentioned is that it runs on a
+        local machine or a purpose-built demo instance that has never been
+        through the deployment pipeline and has no real data behind it. The gap
+        between "works in a demo" and "works in production" is where most
+        delivery failures live.
+      </p>
+      <p>
+        A team practising continuous delivery treats deploy and release as
+        separate events. Code is deployed to production continuously; features
+        are released to users when ready. In this model, there is no
+        demo-production gap, because the demo <em>is</em> production. Any team
+        that can only show you a demo and not production is revealing, by that
+        fact alone, that continuous delivery is not happening.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> When shown a demo, ask: is this running
+        in production right now? Can I use it with real data? A team shipping
+        continuously should be showing you production, because there should be
+        no meaningful difference.
+      </p>
+
+      <h3 id="metrics">Metric gaming</h3>
+
+      <p>
+        The metrics look good because they have been optimised at the expense of
+        the work. Velocity rises because estimates are inflated. Tickets are
+        closed as done when merged to a branch but not deployed. Test coverage
+        is high because trivial tests were written to hit the target. This is
+        the predictable result of measuring a team by proxy numbers: Goodhart's
+        law, where a measure that becomes a target stops being a good measure.
+      </p>
+      <p>
+        Story-point estimation is particularly susceptible. There is no external
+        standard for what a "point" means; the unit is defined by the team using
+        it, which means the team can redefine it at will. A velocity chart that
+        trends upward may reflect faster delivery, or it may reflect nothing
+        more than inflated estimates. You cannot tell from the chart alone.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Look for divergence between metrics and
+        reality. If velocity rises but deployment frequency is flat, work is
+        being counted but not shipped. If coverage is 80 percent but bugs keep
+        reaching production, the tests are not catching what matters. The
+        hardest metric to game is deployment frequency: either code reached
+        production or it did not.
+      </p>
+
+      <h3 id="best-practice">The "best practice" shield</h3>
+
+      <p>
+        The consultancy justifies decisions by invoking "industry best
+        practice." The phrase sounds authoritative and is almost impossible to
+        challenge. In reality it usually means "what we already know how to do."
+        There is no governing body that defines best practice in software, no
+        standard, no register. The phrase is a rhetorical device.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> When a consultancy says "best
+        practice," ask: whose? Where is it documented? What evidence supports
+        it? A genuine evidence-based practice (continuous integration,
+        trunk-based development, the DORA metrics) can be cited and verified. A
+        vague "best practice" that conveniently matches the consultancy's
+        existing playbook is opinion wearing a lab coat.
+      </p>
+
+      <h2 class="group-title" id="technical">The technical sections</h2>
+
+      <h3 id="microservices-pitch">The microservices sales pitch</h3>
+
+      <p>
+        The consultancy recommends a microservices architecture. It sounds
+        modern and scalable. What is not mentioned: microservices are a tool for
+        large organisations with many teams that genuinely need to deploy
+        independently. For most teams, and nearly every greenfield project, they
+        add operational complexity, slow delivery, and create failure modes the
+        team is not equipped to handle. The consultancy often recommends them
+        because microservices are what they sell: they have the architects, the
+        platform engineers, and the Kubernetes expertise on the bench. The
+        recommendation follows the bench, not the need.
+      </p>
+      <p>
+        The academic literature treats this as a known hazard. A 2023 systematic
+        review in IEEE Transactions on Software Engineering covering the
+        decomposition of monoliths into microservices (Abgaz et al., 2023)
+        catalogues how difficult correct decomposition is and how often it goes
+        wrong. Industry migration studies (Fritzsch et al., 2019) document that
+        teams routinely underestimate the practices required.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask why microservices and not a
+        monolith. If the answer is "scalability," ask how many users the system
+        has and what load is anticipated. If "team independence," ask how many
+        teams work on the system. One team does not need twelve independent
+        services. If the consultancy cannot articulate the specific problem
+        microservices solve that a monolith does not, the architecture is a
+        solution in search of a problem.
+      </p>
+
+      <h3 id="microservices-prerequisites">Microservices without the prerequisites</h3>
+
+      <p>
+        The architecture has been adopted, but the practices that make it
+        survivable have not. This is where the real disasters happen, and it has
+        a name in the literature: the <strong><em>distributed
+        monolith</em></strong> — a system with all the operational complexity of
+        distributed services and all the tight coupling of a monolith,
+        delivering the benefits of neither.
+      </p>
+      <p>The prerequisites that are almost always missing:</p>
+      <p>
+        <strong>No contract tests.</strong> Each service exposes an API others
+        depend on. When a service changes its API, dependents break — silently,
+        in production, sometimes days later. Contract tests verify each
+        service's API still matches what its consumers expect, on every change.
+        Without them every deployment is a gamble. Ask: do you have contract
+        tests between services? "We have integration tests" is not the same
+        answer.
+      </p>
+      <p>
+        <strong>A shared QA gate.</strong> The entire point of microservices is
+        independent deployability. A shared QA stage where all services must be
+        tested together before any can release destroys this: the services are
+        coupled at the testing layer. You have a distributed monolith with a
+        shared bottleneck. Ask: can each service deploy to production
+        independently, without waiting for any other service? If the answer
+        involves a shared environment or a release train, the independence was
+        never real.
+      </p>
+      <p>
+        <strong>End-to-end test dependency.</strong> The team relies on a full
+        end-to-end suite running all services together to feel safe releasing.
+        No service can release until every service passes every test. The suite
+        is slow, flaky, and grows into the single biggest impediment to
+        delivery. Ask: how long does the full E2E suite take, and how often does
+        it fail for reasons unrelated to the change being tested?
+      </p>
+      <p>
+        <strong>No service ownership.</strong> In a functioning architecture
+        each service is owned by a team that builds, deploys, and operates it.
+        In a failing one, services are collectively owned by everyone, meaning
+        no one. When something breaks, nobody knows who is responsible. Ask: for
+        each service, who is on call, who deploys it, who decides what changes?
+      </p>
+      <p>
+        <strong>Shared databases.</strong> Two or more services read and write
+        the same database. This is the most common way to build a distributed
+        monolith. Services that share a schema cannot be deployed or scaled
+        independently, and a change in one service's data model can silently
+        break another. Ask: does each service have its own data store? If
+        services share a database, they are a monolith accessed via network
+        calls — strictly worse than a monolith accessed via function calls.
+      </p>
+      <p>
+        <strong>No observability.</strong> A monolith fails in one place.
+        Microservices fail across a network, partially and confusingly. Without
+        distributed logging, tracing, and monitoring, the team cannot tell what
+        is happening when something breaks. Ask: when a request fails, can you
+        trace it across every service it touched?
+      </p>
+      <p>
+        <strong>The cumulative effect.</strong> These prerequisites are almost
+        always missing together, because the team that lacks contract tests is
+        the same team that relies on E2E testing, shares a QA gate, and has no
+        service ownership. The practices were never established before the
+        architecture was adopted. The result is a system harder to build, test,
+        deploy, and debug than the monolith it replaced, delivering none of the
+        benefits that justified the change.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask the six questions above. If the
+        answers are: no contract tests, shared QA gate, slow E2E suite,
+        collective ownership, shared databases, no tracing — the architecture
+        is a liability. That is a finding on its own, regardless of how the
+        code looks.
+      </p>
+
+      <h2 class="group-title" id="ai">The AI sections</h2>
+
+      <p>
+        The research here is recent, consistent, and largely unflattering to the
+        marketing. It is worth reading before accepting any AI pitch.
+      </p>
+
+      <h3 id="ai-discipline">AI as a substitute for engineering discipline</h3>
+
+      <p>
+        The consultancy claims AI has changed how software is built — code is
+        generated faster, velocity is up, the team is "AI-native" — with the
+        implication that traditional discipline matters less. This is the most
+        dangerous version of the AI pitch, because the evidence points the other
+        way: AI-assisted development demands more discipline, not less.
+      </p>
+      <p>Three findings matter.</p>
+      <p>
+        First, the Stanford user study (Perry, Srivastava, Kumar and Boneh, "Do
+        Users Write More Insecure Code with AI Assistants?", CCS 2023) found
+        that participants with access to an AI assistant wrote significantly
+        less secure code than those without, and were simultaneously more likely
+        to believe their code was secure. The authors named this a false sense
+        of security. The participants who trusted the AI least and engaged most
+        critically with their prompts produced the most secure code.
+      </p>
+      <p>
+        Second, this compounds at the delivery level. For two years running,
+        DORA has found that AI tooling correlates with worsened software
+        delivery performance: faster individual code production, but worse
+        throughput and stability for the team as a whole. More code arriving
+        faster, without the practices to absorb it, degrades delivery.
+      </p>
+      <p>
+        Third, a 2025 Sonar study analysing output from five leading models
+        across 4,442 coding assignments (Sabra, Schmitt and Tyler, 2025) found
+        that all evaluated models introduced bugs, security vulnerabilities, and
+        code smells including hard-coded credentials and path-traversal flaws. A
+        model's functional benchmark performance did not predict the quality or
+        security of its code. Passing the tests does not mean the code is sound.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask: since adopting AI tooling, has
+        deployment frequency increased? Has the test suite grown proportionally
+        to the code produced? Is every AI-generated change integrated to trunk
+        daily and tested automatically? If "AI generates code faster" but
+        deployments have not increased and test coverage has not grown, the AI
+        is producing inventory, not delivery.
+      </p>
+
+      <h3 id="ai-deck">The AI strategy that is just a deck</h3>
+
+      <p>
+        The consultancy was engaged to deliver an "AI strategy." What was
+        delivered is a presentation: a maturity model, a roadmap with phases, a
+        recommendation to "establish an AI Centre of Excellence," and a list of
+        technologies named without specifying what problem each solves for your
+        business. No working software. No model trained or evaluated. The
+        strategy recommends more consultancy work to implement the strategy.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask what working software the
+        engagement will put into production. If the answer is "the strategy
+        informs the next phase," the engagement is a document that sells more
+        engagement.
+      </p>
+
+      <h3 id="ai-demo">The AI demo problem, amplified</h3>
+
+      <p>
+        AI makes the demo-to-production gap dramatically worse. A consultant can
+        build an impressive AI demo in an afternoon: a chatbot over your
+        documents, a classifier, an "autonomous" agent. The demo works. What it
+        does not show: how the system handles wrong answers (it will produce
+        them), behaviour on real data at scale, how outputs are evaluated for
+        accuracy, the failure mode when the model hallucinates confidently,
+        production monitoring, what happens when the underlying model is updated
+        or deprecated, and the real cost at production volume.
+      </p>
+      <p>
+        The false-confidence effect Perry et al. found in developers is present
+        in the systems themselves: AI output is often superficially plausible
+        and syntactically correct while containing subtle logical errors. A demo
+        is precisely the setting where superficial plausibility is most
+        convincing and least tested.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask: what is the accuracy on real data,
+        measured how? What happens when the model is wrong? What is the monthly
+        cost at full production volume? What monitoring exists for output
+        quality? Vague or deferred answers mean the demo is a sales tool, not a
+        prototype.
+      </p>
+
+      <h3 id="agentic">Selling "agentic AI" without the foundations</h3>
+
+      <p>
+        The current pitch: autonomous agents that perform workflows, make
+        decisions, and take actions without human involvement. What is not
+        mentioned: agentic AI is the most failure-prone, hardest to test,
+        hardest to monitor, and least predictable form of AI deployment. An
+        agent that autonomously takes actions can autonomously take wrong ones,
+        at speed, at scale, with no human check.
+      </p>
+      <p>
+        This is the microservices sales pitch repeated with higher stakes: the
+        advanced architecture sold to organisations that often lack the
+        basics — clean data, reliable pipelines, even a working CI/CD practice.
+      </p>
+      <p class="action"><strong>How to spot it.</strong> Ask:</p>
+      <ul>
+        <li>What actions can the agent take? What is the blast radius if it takes the wrong one?</li>
+        <li>How do you test an autonomous agent? What does the test suite look like?</li>
+        <li>How do you monitor agent behaviour in production? How do you know when it is wrong?</li>
+        <li>What is the rollback mechanism when an agent makes a bad decision at scale?</li>
+        <li>What evaluation framework measures whether the agent produces correct outcomes?</li>
+        <li>Has the team built and operated a simpler, non-agentic AI system in production first?</li>
+      </ul>
+      <p>
+        If the answers are vague, or the team has never shipped a simpler AI
+        system, they are proposing to skip the fundamentals.
+      </p>
+
+      <h3 id="prompt-engineer">The prompt engineer as expert</h3>
+
+      <p>
+        The project is staffed with an "AI engineer" whose primary skill is
+        writing prompts. They may be good at eliciting useful outputs from a
+        model. What they may lack: software engineering skills, production
+        experience, understanding of testing and deployment, the ability to
+        build the infrastructure that makes a model production-grade. Perry et
+        al. is again relevant: the participants who did best with AI were those
+        with the engineering judgement to engage critically with its output, not
+        those most fluent at prompting.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask the AI team member to describe the
+        production infrastructure — not the prompts, the infrastructure. How is
+        the system deployed? How are outputs evaluated? How are costs monitored?
+        How is the model updated? Answers about prompts rather than systems mean
+        the role is miscast.
+      </p>
+
+      <h2 class="group-title" id="crosses-the-line">Patterns that cross the line</h2>
+
+      <p>
+        Everything above is bad practice. What follows is worse: grey areas that
+        thrive on ambiguity, and in some cases, fraud. A buyer who recognises
+        these should consider not just an audit but legal advice.
+      </p>
+
+      <h3 id="budget-burning">Budget burning</h3>
+
+      <p>
+        Common in government. The department was allocated a budget for this
+        financial year. If it does not spend it, next year's allocation is cut.
+        The consultancy knows this. Work is commissioned not because it is
+        needed but because the budget must be consumed. The deliverable is the
+        invoice.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Engagements starting in the last
+        quarter of the financial year with aggressive timelines and vague scope.
+        Work difficult to connect to any strategic objective. A general
+        atmosphere of "we just need to get this done before June."
+      </p>
+      <p class="action">
+        <strong>Why it matters.</strong> This is public money. The pattern is
+        rarely illegal, but it is waste, and it creates a cycle where budgets
+        are justified by spending rather than outcomes.
+      </p>
+
+      <h3 id="writing-rules">Writing the rules, then winning the game</h3>
+
+      <p>
+        The consultancy helps write the RFP, the technical specification, or the
+        evaluation criteria — then bids on the work, or a closely affiliated
+        firm does. The specification has been written, consciously or not, to
+        favour the consultancy's own capabilities. Competing bidders face
+        requirements that happen to describe the incumbent's exact offering.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Check whether the firm that helped
+        define the requirements is also bidding, or whether a closely affiliated
+        firm is. Look for specification language unusually specific to one
+        vendor's approach.
+      </p>
+
+      <h3 id="revolving-door">The revolving door</h3>
+
+      <p>
+        The person who awards or manages the contract leaves the department and
+        joins the consultancy. Or the consultancy's engagement lead joins the
+        client and continues to engage their former employer. Not always
+        corrupt — people change jobs — but when systematic, the conflicts are
+        structural and the incentives to challenge poor delivery are undermined.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Look at the career histories on both
+        sides. LinkedIn makes this trivially easy. If the client-side sponsor
+        previously worked at the consultancy, or the account lead previously
+        worked at the client, the relationship may not be arm's length.
+      </p>
+      <p class="action">
+        <strong>Why it matters.</strong> This is a governance observation, not a
+        legal finding. But it explains a great deal about why poor work goes
+        unchallenged.
+      </p>
+
+      <h3 id="ghost-resources">Ghost resources and rate inflation</h3>
+
+      <p>
+        The consultancy bills for twelve. Eight are active. Two attend
+        occasional meetings. Two have never appeared. Or the proposal named
+        senior developers at senior rates and the work is done by juniors at the
+        senior rate. Billing for people who do not exist is straightforward
+        fraud. Billing senior rates for junior staff is a grey area that depends
+        on the contract.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Track who is actually working, by name,
+        each week, against the invoice. If the invoice says twelve and the
+        standups have eight, the other four are the finding.
+      </p>
+
+      <h3 id="independent-review">The "independent" review that is not independent</h3>
+
+      <p>
+        The client suspects failure and engages a second consultancy to assess
+        the first. The second has a commercial relationship with the first: a
+        partnership, a referral arrangement, a shared parent company, or simply
+        a mutual interest in not setting the precedent that consultancies audit
+        each other harshly. The review returns mild findings and recommendations
+        to "improve communication." The client paid for assurance and received
+        confirmation.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Before engaging anyone to review a
+        consultancy's work, check for any commercial relationship. Ask directly.
+        Check their website for partnership logos. If the reviewer lists the
+        firm under review as a "partner," the review is compromised before it
+        starts.
+      </p>
+      <p class="action">
+        <strong>Why this matters here.</strong> This is the specific problem
+        vendor-blind auditing exists to solve. Withholding the consultancy's
+        name removes the conflict at the root: an auditor cannot be biased
+        toward a firm they do not know they are assessing.
+      </p>
+
+      <h3 id="manufactured-urgency">Manufactured urgency</h3>
+
+      <p>
+        The deadline was set by the consultancy during the proposal, or accepted
+        without challenge. It is now at risk — because it was always
+        unrealistic, or deliberately underestimated to win the deal. The
+        response: a war room, overtime, weekend work, additional consultants at
+        surge rates. The crisis feels real, and the team genuinely works hard.
+        But the crisis was manufactured by the estimate that created the
+        engagement. The consultancy is now paid more — for the surge — to fix a
+        problem they created — with the estimate.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> When a project enters crisis mode,
+        return to the original estimate. Was the timeline realistic when
+        proposed? Did anyone challenge it? If the consultancy set the timeline,
+        sold the deal on it, and is now billing surge rates to meet it, the
+        crisis is a feature of the business model.
+      </p>
+
+      <h3 id="vendor-incentives">Undisclosed vendor incentives</h3>
+
+      <p>
+        The consultancy recommends a specific tool, platform, or vendor. The
+        recommendation sounds technical and objective. Undisclosed: the
+        consultancy has a referral arrangement, partnership deal, or revenue
+        share with the vendor. The advice is not independent; the recommendation
+        is a sales channel.
+      </p>
+      <p class="action">
+        <strong>How to spot it.</strong> Ask: do you have a commercial
+        relationship with them? Are you a partner, reseller, or referral
+        partner? Check the consultancy's website for partner logos and
+        certification badges. If they recommend a platform and their site says
+        "Advanced Consulting Partner" for that platform, the recommendation is
+        not independent.
+      </p>
+
+      <h2 class="group-title" id="healthy">What a healthy consultancy looks like</h2>
+
+      <p>
+        Not every engagement fails. These are the signs that the work is real:
+      </p>
+      <p>
+        <strong>They show you production, not demos.</strong> The team can show
+        working software in production at any time, because it is deployed
+        continuously. There is no "demo environment" that diverges from reality.
+      </p>
+      <p>
+        <strong>They introduce you to the engineers.</strong> Your primary
+        contact is the person doing the technical work, not an account manager.
+        You talk to the team directly and regularly.
+      </p>
+      <p>
+        <strong>They document decisions as they go.</strong> Architectural
+        decisions, trade-offs, and context are recorded continuously, not
+        reconstructed into a handover document at the end.
+      </p>
+      <p>
+        <strong>They make themselves progressively less necessary.</strong>
+        Internal staff work alongside the consulting team from the start, paired
+        on real work, building the capability to operate without the
+        consultancy.
+      </p>
+      <p>
+        <strong>They can explain the architecture in plain language.</strong> No
+        jargon shields. If they cannot explain what they built and why in terms
+        a non-technical stakeholder can follow, the complexity is a warning
+        sign, not a virtue.
+      </p>
+      <p>
+        <strong>They measure outcomes, not activity.</strong> The team tracks
+        deployment frequency, lead time, and change failure rate — not velocity,
+        story points, or hours logged. They can show you the deployment history
+        and it tells a clear story.
+      </p>
+      <p>
+        <strong>They estimate from data, not from hope.</strong> Forecasts are
+        based on how long similar work actually took (lead-time distributions),
+        not on planning poker, t-shirt sizes, or whatever the most persuasive
+        person in the room asserts. The data is visible to you, not just to
+        them.
+      </p>
+      <p>
+        <strong>They limit work in progress.</strong> The team finishes work
+        before starting more. One active thing per person, or close to it. If
+        everyone is working on five things, nothing is shipping.
+      </p>
+      <p>
+        <strong>They treat deploy and release as separate events.</strong> Code
+        reaches production continuously. Features are released to users when
+        ready, via feature flags or similar mechanisms. There is no high-drama
+        "release day."
+      </p>
+      <p>
+        <strong>They welcome scrutiny.</strong> They are comfortable with an
+        independent audit and do not resist it. A consultancy that objects to
+        its work being independently examined is telling you something.
+      </p>
+
+      <h2 id="references">References</h2>
+
+      <div class="references">
+        <p>
+          <sup>1</sup> Bloch, Blumberg and Laartz (2012), "Delivering
+          large-scale IT projects on time, on budget, and on value," University
+          of Oxford, published by McKinsey &amp; Company. Review of 5,400+ IT
+          projects over $15M: on average 45% over budget, 7% over time, 56%
+          less value than predicted. The research was conducted at Oxford; it was
+          published by McKinsey, who now produce a volume of <a
+          href="https://www.mckinsey.com/capabilities/quantumblack/our-insights">AI-generated
+          thought leadership</a> that serves as its own example of several
+          patterns described on this page.
+        </p>
+        <p>
+          Standish Group, CHAOS Reports (1994–present). Long-running study of IT
+          project success, challenge, and failure rates; consistent finding that
+          large projects succeed far less often than small ones.
+        </p>
+        <p>
+          DORA / Google Cloud, Accelerate State of DevOps Reports
+          (2014–present), incl. 2024 (39,000+ respondents). Four key metrics
+          (deployment frequency, lead time, change failure rate, recovery time)
+          plus reliability added later. Elite-tier and industry-decline
+          findings. Two consecutive years of AI tooling correlating with
+          worsened delivery performance.
+        </p>
+        <p>
+          Perry, Srivastava, Kumar and Boneh (2023), "Do Users Write More
+          Insecure Code with AI Assistants?", ACM CCS '23. arXiv:2211.03622.
+          Developers with AI assistants wrote significantly less secure code and
+          were more confident it was secure.
+        </p>
+        <p>
+          Pearce, Ahmad, Tan, Dolan-Gavitt and Karri (2022), "Asleep at the
+          Keyboard? Assessing the Security of GitHub Copilot's Code
+          Contributions," IEEE S&amp;P. Approximately 40% of generated programs
+          contained vulnerabilities across 89 scenarios.
+        </p>
+        <p>
+          Sabra, Schmitt and Tyler (2025), "Assessing the Quality and Security
+          of AI-Generated Code: A Quantitative Analysis," Sonar.
+          arXiv:2508.14727. Across 4,442 assignments and five models: pervasive
+          bugs, vulnerabilities, and code smells; functional benchmark
+          performance did not predict code quality or security.
+        </p>
+        <p>
+          Abgaz et al. (2023), "Decomposition of Monolith Applications Into
+          Microservices Architectures: A Systematic Review," IEEE Transactions
+          on Software Engineering 49(8). On the difficulty and failure modes of
+          microservices decomposition.
+        </p>
+        <p>
+          Fritzsch, Bogner, Wagner and Zimmermann (2019), "Microservices
+          Migration in Industry: Intentions, Strategies, and Challenges." On
+          underestimated practice requirements in real migrations.
+        </p>
+      </div>
+
+      <p class="closing">
+        These patterns range from common bad practice to potential fraud. If you
+        recognise them in your engagement, an independent audit can document the
+        evidence, with each finding tied to the actual artefacts. What to do
+        with that evidence is a decision for you and your advisors.
+        <a href="/">mainline.systems</a>
+      </p>
+
+  </div></section>
+  </main>
+
+  <hr class="rule">
+  <footer><div class="wrap">
+    <a href="mailto:hello@mainline.systems" data-umami-event="contact-click">hello@mainline.systems</a> &middot; Kipple Pty Ltd. ABN 50 696 825 662
+    <div class="fr"><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><span>&copy; 2026</span></div>
+  </div></footer>
+</body>
+</html>

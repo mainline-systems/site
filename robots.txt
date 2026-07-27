@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mainline.systems/sitemap.xml
