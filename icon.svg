@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#1a1a2e"/>
+  <text x="200" y="200" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="normal" fill="#e8e8ec">Main<tspan font-style="italic" fill="#6bc5f0">line</tspan></text>
+  <line x1="70" y1="245" x2="330" y2="245" stroke="#6bc5f0" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="120" cy="245" r="7" fill="#e8e8ec"/>
+  <circle cx="200" cy="245" r="9" fill="#e8e8ec"/>
+  <circle cx="280" cy="245" r="7" fill="#e8e8ec"/>
+</svg>
